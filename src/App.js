@@ -1,8 +1,9 @@
+import {useState} from 'react'
 import Expenses from "./components/Expenses/Expenses"
-import NewExpense from "./components/NewExpense"
+import NewExpense from "./components/NewExpenseForm/NewExpense"
 
 // subtract 1 from the month (in 1 based indexing) to convert it into 0 based indexing
-let expenses = [
+let DUMMY_EXPENSES = [
   {
     id : 1,
     date : new Date(1973, 1 -1, 1),
@@ -24,9 +25,22 @@ let expenses = [
 ]
 
 function App() {
+
+  const [expenses, setExpenses] = useState(DUMMY_EXPENSES)
+
+  const onSubmitExpenseForm = (newExpense) => {
+    setExpenses(
+      (prevExpenses) => {
+        return [newExpense, ...prevExpenses]
+      }
+    )
+
+    console.log(newExpense + " in App.js")
+  }
+
   return (
     <div>
-      <NewExpense />
+      <NewExpense onSubmitExpenseForm={onSubmitExpenseForm}/>
       <Expenses expenses={expenses} />
     </div>
   );
