@@ -8,19 +8,19 @@ let DUMMY_EXPENSES = [
     id : 1,
     date : new Date(1973, 1 -1, 1),
     title: "House",
-    price: "10 mil"
+    price: 10
   },
   {
     id : 2,
     date : new Date(2001, 11 -1, 10),
     title: "Car",
-    price: "1 mil"
+    price: 1
   },
   {
     id : 3,
     date : new Date(2001, 4 -1, 18),
     title: "Bike",
-    price: "2 mil"
+    price: 2
   }
 ]
 

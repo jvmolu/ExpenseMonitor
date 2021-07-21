@@ -16,7 +16,7 @@ const ExpenseForm = (props) => {
             const newExpense = {
                 id : new Date().getTime(),
                 title: title,
-                price: amount,
+                price: Number(amount),
                 date: new Date(date)
             }
     
