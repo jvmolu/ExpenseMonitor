@@ -6,21 +6,21 @@ import NewExpense from "./components/NewExpenseForm/NewExpense"
 let DUMMY_EXPENSES = [
   {
     id : 1,
-    date : new Date(1973, 1 -1, 1),
+    date : new Date(2020, 1 -1, 1),
     title: "House",
-    price: 10
+    price: 100000
   },
   {
     id : 2,
-    date : new Date(2001, 11 -1, 10),
+    date : new Date(2019, 11 -1, 10),
     title: "Car",
-    price: 1
+    price: 40000
   },
   {
     id : 3,
-    date : new Date(2001, 4 -1, 18),
+    date : new Date(2020, 4 -1, 18),
     title: "Bike",
-    price: 2
+    price: 20000
   }
 ]
 
