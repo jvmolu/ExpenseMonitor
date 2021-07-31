@@ -1,6 +1,7 @@
   
 .expenses-filter {
-    color: white;
+    color: rgb(57, 27, 230);
+    text-shadow: 0 1px 1px rgba(42, 17, 90, 0.705);
     padding: 0 1rem;
   }
   
@@ -12,14 +13,20 @@
     margin: 1rem 0;
   }
   
-  .expenses-filter label {
+  .expenses-filter h3 {
     font-weight: bold;
     margin-bottom: 0.5rem;
   }
   
   .expenses-filter select {
+    color: rgb(57, 27, 230);
+    background: rgb(176, 233, 255);
     font: inherit;
     padding: 0.5rem 3rem;
     font-weight: bold;
     border-radius: 6px;
+  }
+
+  .expenses-filter select option {
+    background: #fff
   }
